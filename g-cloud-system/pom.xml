@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>gan.cloud.co.id</groupId>
+	<artifactId>g-cloud-system</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>g-cloud-system</name>
+	<url>http://maven.apache.org</url>
+	<modules>
+		<module>g-cloud-system-core</module>
+		<module>g-cloud-system-repository</module>
+		<module>g-cloud-system-web-erp</module>
+    <module>g-cloud-system-web-pos</module>
+  </modules>
+
+	<properties>
+        <org.springframework.version>4.0.1.RELEASE</org.springframework.version>
+        <org.springframework.security.version>3.2.0.RELEASE</org.springframework.security.version>
+        <org.springframework.data.jpa.version>1.5.0.RELEASE</org.springframework.data.jpa.version>
+        <org.springframework.ws.version>2.1.4.RELEASE</org.springframework.ws.version>
+        <net.sf.jasperreport.version>5.5.0</net.sf.jasperreport.version>
+        <org.hibernate.version>4.2.8.Final</org.hibernate.version>
+        <org.hibernate.validator.version>5.0.2.Final</org.hibernate.validator.version>
+        <c3p0.version>0.9.1.2</c3p0.version>
+        <boneCp.version>0.7.1.RELEASE</boneCp.version>
+        <org.slf4j.version>1.6.4</org.slf4j.version>
+        <ch.qos.logback.version>1.0.0</ch.qos.logback.version>
+        <joda-time.version>2.0</joda-time.version>
+        <mysql.version>5.1.18</mysql.version>
+        <velocity.version>1.7</velocity.version>
+        <postgresql.version>9.1-901.jdbc4</postgresql.version>
+        <javassist.version>3.12.1.GA</javassist.version>
+        <groovy.version>1.8.4</groovy.version>
+        <junit.version>4.10</junit.version>
+        <dbunit.version>2.4.8</dbunit.version>
+        <quartz.version>2.2.0</quartz.version>
+        <servlet.version>2.5</servlet.version>
+        <commons.collection.version>3.2.1</commons.collection.version>
+        <commons.lang3.version>3.1</commons.lang3.version>
+        <commons-fileupload.version>1.2.2</commons-fileupload.version>
+        <commons-io.version>2.4</commons-io.version>
+        <commons-logging.version>1.1.1</commons-logging.version>
+        <guava.version>11.0.1</guava.version>
+        <jackson-mapper-asl.version>2.1.0</jackson-mapper-asl.version>
+        <liquibase-maven-plugin.version>2.0.3</liquibase-maven-plugin.version>
+        <maven-failsafe-plugin.version>2.10</maven-failsafe-plugin.version>
+        <rest-assured.version>1.6.2</rest-assured.version>
+        <tiles.version>2.2.2</tiles.version>
+        <jstl.version>1.2</jstl.version>
+        <cglib.version>2.2</cglib.version>
+        <org.mockito.version>1.9.5</org.mockito.version>
+        <commons.net.version>3.3</commons.net.version>
+        <org.aspectj.version>1.7.3</org.aspectj.version>
+        <maven.jetty.plugin.version>9.1.2.v20140210</maven.jetty.plugin.version>
+        <org.apache.httpcomponents.httpclient.version>4.3.1</org.apache.httpcomponents.httpclient.version>
+        <super-csv.version>2.1.0</super-csv.version>
+    </properties>
+
+	<dependencies>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${org.slf4j.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+	<!--	<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>log4j-over-slf4j</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jolbox</groupId>
+			<artifactId>bonecp</artifactId>
+			<version>${boneCp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${org.hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${org.hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>${javassist.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		&lt;!&ndash; <dependency> <groupId>org.springframework</groupId> <artifactId>spring-expression</artifactId>
+			<version>${org.springframework.version}</version> <scope>compile</scope> 
+			</dependency> &ndash;&gt;
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>-->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-oxm</artifactId> 
+			<version>${org.springframework.version}</version> </dependency> -->
+
+
+	</dependencies>
+
+</project>

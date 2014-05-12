@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+    <definition name="base.definition" template="/WEB-INF/jsp/layout/layout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp"/>
+        <put-attribute name="sidebar" value="/WEB-INF/jsp/layout/sidebar.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp"/>
+    </definition>
+
+    <definition name="admin-dashboard" extends="base.definition">
+        <put-attribute name="title" value="GC admin-dashboard"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/admin-dashboard.jsp"/>
+    </definition>
+
+    <definition name="user-management" extends="base.definition">
+        <put-attribute name="title" value="GC user management"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/hrd/user-management.jsp"/>
+    </definition>
+
+    <definition name="loginpage" template="/WEB-INF/jsp/login.jsp"/>
+
+
+</tiles-definitions>

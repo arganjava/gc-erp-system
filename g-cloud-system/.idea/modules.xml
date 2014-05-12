@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/g-cloud-system.iml" filepath="$PROJECT_DIR$/g-cloud-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g-cloud-system-core/g-cloud-system-core.iml" filepath="$PROJECT_DIR$/g-cloud-system-core/g-cloud-system-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g-cloud-system-repository/g-cloud-system-repository.iml" filepath="$PROJECT_DIR$/g-cloud-system-repository/g-cloud-system-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g-cloud-system-web-erp/g-cloud-system-web-erp.iml" filepath="$PROJECT_DIR$/g-cloud-system-web-erp/g-cloud-system-web-erp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g-cloud-system-web-pos/g-cloud-system-web-pos.iml" filepath="$PROJECT_DIR$/g-cloud-system-web-pos/g-cloud-system-web-pos.iml" />
+    </modules>
+  </component>
+</project>
+

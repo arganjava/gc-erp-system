@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="g-cloud-system-web-erp:war">
+    <output-path>$PROJECT_DIR$/g-cloud-system-web-erp/target</output-path>
+    <root id="archive" name="g-cloud-system-web-erp.war">
+      <element id="artifact" artifact-name="g-cloud-system-web-erp:war exploded" />
+    </root>
+  </artifact>
+</component>
